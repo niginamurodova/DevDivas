@@ -1,0 +1,36 @@
+.contact{
+    border-radius: 10px;
+    border: 0;
+    background: #4682A9;
+    padding: 18px 35px;
+    overflow: hidden;
+    transition: 0.5s ease;
+    a {
+        color: #FFF;
+        text-align: center;
+        font-family: Cabin;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: capitalize;
+        text-decoration: none;
+
+    }
+    &:hover {
+        color: #012863;
+        background: #C3E4F5;
+    }
+}
+
+li{
+    list-style: none;
+}
+
+.square{
+    width: 12px;
+    height: 12px;
+    background-color: #4682A9;
+    display: inline-block;
+    margin-right: 5px;
+}

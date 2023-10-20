@@ -1,0 +1,187 @@
+.projects{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    .projects_main{
+        transform: matrix(0);
+        z-index: 100;
+        overflow: hidden;
+
+        .projects_header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            div{
+                transform: rotate(0);
+                li {
+                    color: #37393F;
+                    font-family: "Inter", sans-serif;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-transform: capitalize;
+                }
+                h2 {
+                    color: #333;
+                    font-family: Poppins;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 121%;
+                }
+            }
+        }
+        .project_container{
+            max-width: 1500px;
+            margin: auto;
+            overflow: hidden;
+            .projects_slider{
+                width: calc(250px * 3);
+                padding-top: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 30px;
+                animation: projectSlider 20s alternate-reverse infinite;
+                .sliderImg{
+                    position: relative;
+                    transition: all 0.2s;
+                    &:hover{
+                        transform: scale(1.03);
+                    }
+                    img{
+                        height: 501px;
+                        width: 434px;
+                        background-size: cover;
+                        
+                        
+                        
+                    }
+                    &:hover .sliderImg_text{
+                        transform: rotate(0);
+                        display: block;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-image: linear-gradient(to top, #011430, rgba(12, 78, 178, 0.073));
+                        position: absolute;
+                        text-align: center;
+                        height: 100%;
+                    }
+                    .sliderImg_text{               
+                        display: none;
+                        p{
+                            color: #FFF;
+                            font-family: "Poppins", sans-serif;
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 157.5%;
+                            padding-top: 244px;
+                        }
+                        button{
+                            margin-top: 10px;
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #shadow1, #shadow2{
+        position: absolute;
+        left: 0;
+        z-index: 0;
+
+    }
+    #shadow1{
+        bottom: -356px;
+
+    }
+    #shadow2{
+        bottom: -356px;
+
+    }
+}
+
+@keyframes projectSlider {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 5));
+
+    }
+}
+
+@media(max-width:890px){
+    .projects{
+        .projects_main{
+            .projects_header{
+                align-items: center;
+                div{
+                    li{
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                    }
+                    h2{
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 121%;
+                    }
+                }
+                .contact{
+                    padding: 15px 25px;
+                    a{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    #shadow1, #shadow2{
+        width: 80%;
+    }
+}
+
+@media(max-width:650px){
+    .projects{
+        .projects_main{
+            .projects_header{
+                div{
+                    li{
+                        font-size: 14px;
+                    }
+                    h2{
+                        font-size: 25px;
+                       
+                    }
+                }
+                .contact{
+                    a{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media(max-width: 550px){
+    .projects{
+        .projects_main{
+            .projects_header{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                text-align: center;
+            }
+        }
+    }
+    
+}
+

@@ -1,0 +1,165 @@
+footer{
+    background-color: #012863;
+    .footer_main{
+        .footer_header{
+            padding: 30px 0;
+            display: flex;
+            border-bottom: 1px solid white;
+            justify-content: space-between;
+            ul{
+                display: flex; 
+                gap: 30px;
+                li{
+                    a{
+                        color: #BDBEC8;
+                        text-decoration: none;
+                        font-family: 'Cabin', sans-serif;
+                        font-size: 16px;
+                        letter-spacing: 6%;
+                        line-height: 19px;
+                        transition: all 0.2s;
+                        &:hover{
+                            color: #368bb8;
+
+                        }
+                    }
+                }
+            }
+            .logos{
+                display: flex;
+                gap: 30px;  
+            }
+        }
+        .footer_links{
+            padding-top: 85px;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 85px;
+            border-bottom: 1px solid white;
+
+            h5{
+                color: #BDBEC8;
+                text-decoration: none;
+                font-family: 'Poppins', sans-serif;
+                font-size: 18px;
+                line-height: 16px;
+                font-weight: 500;
+                color: #FFFFFF;
+                margin-bottom: 21px;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+                text-transform: capitalize;
+                li{
+                    a{
+                        color: #BDBEC8;
+                        text-decoration: none;
+                        font-family: 'Cabin', sans-serif;
+                        transition: all 0.2s;
+                        &:hover{
+                            color: #368bb8;
+                        }
+                    }
+                }
+            }
+        }
+        .footer_logo{
+            img{
+                width: 204px;
+                height: 60px;
+            }
+            h5{
+                text-align: end;
+                margin-top: 42px;
+                margin-bottom: 17px;
+            }
+            p{
+                font-size: 16px;
+                color: #BDBEC8;
+                line-height: 22px;
+                text-align: end;
+            }
+
+        }
+        .copyright{
+            display: flex;
+            gap: 250px;
+            padding: 10px 0;
+            p{
+                font-family: 'Outfit', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                &:first-child{
+                    color: #BDBEC8;
+
+                }
+                &:last-child{
+                    color: #ffff;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 860px){
+    footer{
+        .footer_main{
+            .footer_links{
+                text-align: center;
+                flex-direction: column;
+                gap: 60px;
+                .footer_logo{
+                    h5{
+                        // text-align: start;
+                        text-align: center;
+                    }
+                    p{
+                        // text-align: start;
+                        text-align: center;
+                    }
+                }
+            }
+            .copyright{
+                justify-content: space-between;
+                gap: 20px;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media(max-width: 725px){
+    footer{
+        .footer_main{
+            .footer_header{
+                flex-direction: column;
+                gap: 60px;
+                align-items: center;
+                
+            }
+        }
+    }
+}
+
+@media(max-width: 584px){
+    footer{
+        .footer_main{
+            .footer_header{
+                display: none;
+                
+                
+            }
+            .footer_links{
+                .footer_logo{
+                    img{
+                        width: 150px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,107 @@
+.subscribe{
+    padding-top: 200px;
+    padding-bottom: 100px;
+    .subscribe_main{
+        .subscribe_box{
+            background-image:linear-gradient(to top, #91c8e4cf,#87cbedbd), url(/img/Photo.jpg);
+            width: 1062px;
+            height: 525px;
+            margin: auto;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            li {
+                color: #37393F;
+                font-family: "Inter", sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-transform: capitalize;
+                margin-bottom: 26px;
+            }
+            h2 {
+                color: #333;
+                font-family: 'Poppins', sans-serif;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 48px;
+                span{
+                    color: white;
+                }
+            }
+
+            p{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26.32px;
+                font-family: 'Inter', sans-serif;
+                margin-top: 10px;
+                margin-bottom: 34px;
+            }
+        
+
+        }
+    }
+}
+
+@media(max-width:1135px){
+    .subscribe{
+        .subscribe_main{
+            .subscribe_box{
+                width: 100%;
+            }
+        }
+    }
+}
+@media(max-width:658px){
+    .subscribe{
+        .subscribe_main{
+            .subscribe_box{
+                h2{
+                    font-size: 32px;
+                }
+                p{
+                    font-size: 14px;
+                }
+                button{
+                    padding: 15px 25px;
+                    font-size: 14px;
+
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 450px){
+    .subscribe{
+        .subscribe_main{
+            .subscribe_box{
+                padding: 5px;
+                li{
+                    font-size: 15px;
+                }
+                h2{
+                    font-size: 25px;
+                    line-height: 34px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                button{
+                    padding: 15px 25px;
+                    a{
+                        font-size: 14px;
+
+                    }
+                }
+            }
+        }
+    }
+}

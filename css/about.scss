@@ -1,0 +1,126 @@
+.about{
+    padding-top: 90px;
+    .about_container{
+        max-width: 1062px;
+        margin: auto;
+        overflow: hidden;
+        .about_img{
+            margin-bottom: 54px;
+            // background-image: url(/img/Property\ 1=Slider\ 1.png);
+            // background-size: cover;
+            // background-repeat: no-repeat;
+            background-position: center;
+            width: 1062px;
+            // width: 100%;
+            // height: 597px;
+            display: flex;
+            // aspect-ratio: 16/9;
+            // overflow-x: auto;
+            // scroll-snap-type: x mandatory;
+            // scroll-behavior: smooth;
+            animation: aboutSlider 10s 3s infinite;
+            
+            img{
+                flex:1 0 100%;
+                scroll-snap-align: start;
+                object-fit: cover;
+            }
+            
+        }
+
+        .about_text{
+            margin-bottom: 91px;
+            h2{
+                font-family: 'Poppins', sans-serif;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 64px;
+                color: #333333;
+            }
+            p{
+                font-family: 'Inter', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 27px;
+                margin-top: 36px;
+
+            }
+        }
+    }
+}
+
+
+// @keyframes aboutSlider {
+//     0%{
+//         background-image: url(/img/Property\ 1=Slider\ 1.png);
+
+//     }
+//     35%{
+//         background-image: url(/img/Property\ 1=Slider\ 2.png);
+
+//     }
+//     90%{
+//         background-image: url(/img/Property\ 1=Slider\ 3.png);
+
+//     }
+// }
+
+@keyframes aboutSlider {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-100%);
+
+    }
+    100%{
+        transform: translateX(-200%);
+
+    }
+}
+
+@media(max-width:1080px){
+    .about{
+        .about_container{
+            .about_img{
+                width: 100%;
+                height: 100%;
+            }
+            .about_text{
+                padding: 30px;
+
+            }
+        }
+    }
+}
+
+@media(max-width: 800px){
+    .about{
+        .about_container{
+            .about_text{
+                h2{
+                    font-size: 36px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 570px){
+    .about{
+        .about_container{
+            .about_text{
+                h2{
+                    font-size: 30px;
+                    line-height: 46px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
